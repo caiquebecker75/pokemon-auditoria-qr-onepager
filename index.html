@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pokémon · Cada peça da onda vira prova de execução · one-pager</title>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#141B34;--blue:#2A4B9B;--yel:#FFCB05;--red:#D62F2F;--paper:#FFFDF5;--soft:#F3EFE0;--lime:#C0EE4E}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',sans-serif;font-size:17px;line-height:1.45}
+h1,h2,h3{font-family:'Big Shoulders Display',Impact,sans-serif;font-weight:900;line-height:1}
+em{font-style:normal;color:var(--red)}
+.w{max-width:1280px;margin:0 auto;padding:0 32px}
+.top{display:flex;align-items:center;gap:20px;padding:22px 0}
+.top img{height:40px}.top i{width:1px;height:28px;background:rgba(20,27,52,.3)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding:12px 0 30px}
+.hero h1{font-size:92px;margin:14px 0}
+.tag{display:inline-block;background:var(--yel);font:700 14px 'Space Grotesk';letter-spacing:.08em;text-transform:uppercase;padding:7px 14px;border-radius:99px}
+.hero img{width:100%;border-radius:20px;display:block;aspect-ratio:3/2;object-fit:cover}
+.lede{font-size:21px;max-width:560px;color:#2b3150}
+.kp{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:10px 0 34px}
+.kp div{background:var(--soft);border-radius:18px;padding:20px;border-top:6px solid var(--blue)}
+.kp div:nth-child(2){border-color:var(--yel)}.kp div:nth-child(3){border-color:var(--red)}.kp div:nth-child(4){border-color:#4a9b1f}
+.kp .num{font:900 72px 'Big Shoulders Display';line-height:1}
+.kp p{font-size:16px}
+.sec{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:34px}
+.sec h2{font-size:48px;margin-bottom:12px}
+.sec img{width:100%;border-radius:16px;display:block;border:1px solid rgba(20,27,52,.15)}
+table{width:100%;border-collapse:collapse;font-size:16px}
+th,td{text-align:left;padding:12px 10px;border-bottom:1px solid rgba(20,27,52,.15);vertical-align:top}
+th{font:700 13px 'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.ex{display:inline-block;background:var(--lime);font:700 13px 'Space Grotesk';letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:99px;margin-bottom:10px}
+.band{background:var(--blue);color:#fff;border-radius:22px;padding:30px 34px;margin-bottom:34px}
+.band h2{font-size:44px;margin-bottom:8px}
+.band p{max-width:900px}
+.band .mk{display:flex;gap:30px;flex-wrap:wrap;margin-top:16px;font:700 20px 'Big Shoulders Display';letter-spacing:.05em;text-transform:uppercase;color:#dfe7ff}
+.foot{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap;padding:6px 0 40px}
+.foot small{font-size:13px;color:#5a6078;max-width:760px;display:block}
+.wa{background:var(--lime);color:var(--ink);font:700 20px 'Space Grotesk';padding:18px 30px;border-radius:99px;text-decoration:none;min-height:44px;display:inline-block}
+.fonte{font-size:12px;color:#7a7f94;margin-top:6px}
+.rv{opacity:0;transform:translateY(18px);animation:up .7s forwards}
+@keyframes up{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rv{animation:none;opacity:1;transform:none}}
+@media (max-width:899px){.tag,.ex{font-size:16px!important}.hero,.sec{grid-template-columns:1fr}.hero h1{font-size:44px}.kp{grid-template-columns:1fr 1fr}.kp .num{font-size:54px}.sec h2,.band h2{font-size:36px}body{font-size:16px}.w{padding:0 20px}th,td{font-size:15px}}
+</style></head>
+<body><div class="w">
+<div class="top"><img src="assets/01-oficina-1792159617893-logo.png" alt="Logo Pokémon"><i></i><img src="assets/02-oficina-1792160291835-logo75-black.png" alt="Logo 75 LAB"></div>
+<section class="hero">
+ <div class="rv"><span class="tag">Proposta · outubro de 2026</span><h1>Cada peça da onda vira <em>prova</em> de execução.</h1><p class="lede">A Pokémon investe no material e a COPAG instala. Com o sistema de QR da 75 LAB, a Pokémon vê onde o material chegou e ganha o mapa das lojas que vendem seus produtos.</p></div>
+ <img class="rv" src="assets/03-oficina-1792171167978-verso.jpg" alt="Display de balcão visto por trás, com a etiqueta de QR na base" style="animation-delay:.2s">
+</section>
+<section class="kp">
+ <div class="rv"><div class="num"><span data-c="5">5</span></div><p>medidas, loja a loja: implantação, instaladas, positivadas, base de lojas e book de fotos</p></div>
+ <div class="rv" style="animation-delay:.1s"><div class="num"><span data-c="1">1</span> min</div><p>para o instalador conferir a montagem e registrar a loja</p></div>
+ <div class="rv" style="animation-delay:.2s"><div class="num"><span data-c="0">0</span></div><p>QR à vista do shopper: a etiqueta fica na base ou no verso</p></div>
+ <div class="rv" style="animation-delay:.3s"><div class="num"><span data-c="1">1</span></div><p>link ao vivo, sem login, só da Pokémon</p></div>
+</section>
+<section class="sec">
+ <div><h2>Como funciona</h2>
+ <table><tr><th>Peça</th><th>O que leva</th><th>Quem lê</th></tr>
+ <tr><td>Peças leves (stopper, display de balcão, clip strip)</td><td>Etiqueta com QR, cerca de 4 x 5 cm, na base ou no verso</td><td>Instalador da COPAG; auditor em revisita</td></tr>
+ <tr><td>Display pesado</td><td>QR na base e etiqueta de localização na estrutura, sem alerta em tempo real</td><td>Instalador; conferência em revisita</td></tr>
+ <tr><td>Painel de instalações</td><td>Lojas positivadas, ritmo, rede, cidade, estado, fotos e mapa</td><td>Pokémon, por link sem login</td></tr></table>
+ <p class="fonte">Fonte: sistema Produtos 75 LAB e Painel de instalações.</p></div>
+ <div><span class="ex">Painel de exemplo · dados fictícios</span><img src="assets/04-oficina-1792170973287-sys-d0.jpg" alt="Painel de instalações com indicadores de lojas positivadas"></div>
+</section>
+<section class="sec">
+ <div><span class="ex">Página do QR · exemplo Pokémon</span><img src="assets/05-oficina-1792170976386-sys-p0.jpg" alt="Página que o QR abre, com objetivo e passo a passo da peça" style="max-width:360px"></div>
+ <div><h2>O que a Pokémon recebe</h2>
+ <table><tr><th>Prova da execução</th><th>Mapa de lojas</th></tr>
+ <tr><td>Tempo de implantação e lojas instaladas contra as planejadas</td><td>Rede, cidade e estado de cada loja que vende</td></tr>
+ <tr><td>Book de fotos, loja a loja</td><td>Loja com material vende mais ou menos?</td></tr>
+ <tr><td>Quando o campo acontece, por equipe</td><td>Lojas importantes que ficaram sem material</td></tr></table>
+ <p class="fonte">O cruzamento com venda depende do dado de venda que a Pokémon tiver por loja ou região.</p></div>
+</section>
+<section class="band"><h2>Quem é a 75 LAB</h2><p>Nascemos de dois lados do balcão: Caique Becker, do varejo, e Daniel Coimbra, da indústria. Mais de 15 anos vivendo a distância entre o que a marca quer e o que acontece na loja. Estratégia de PDV, materiais, rastreamento de execução com QR e plataformas próprias.</p><div class="mk"><span>Petz</span><span>Coop</span><span>Capital das Cestas</span><span>LG</span><span>Riachuelo</span><span>TCL</span><span>Grupo Pereira</span><span>Drogarias DPSP</span></div></section>
+<div class="foot"><small>75 LAB Estratégia, Design e Produção Ltda · CNPJ 55.470.982/0001-77 · CENU · Torre Norte, Av. das Nações Unidas, 12.901, Brooklin, São Paulo, SP, 04578-910 · contato@75lab.com.br · 75lab.com.br · @setecincolab</small>
+<a class="wa" href="https://wa.me/5511986765634?text=Ol%C3%A1!%20Vi%20a%20proposta%20da%2075%20LAB%20para%20a%20Pok%C3%A9mon%20e%20quero%20conversar." target="_blank" rel="noopener">Fale conosco no WhatsApp</a></div>
+</div>
+<script>document.querySelectorAll('[data-c]').forEach(function(e){var t=+e.dataset.c,t0=performance.now();(function f(n){var p=Math.min(1,(n-t0)/1200);e.textContent=Math.round(t*p);if(p<1)requestAnimationFrame(f)})(t0)})</script>
+<style data-base-deck="1.0.0">
+/* Base de deck da agência 75 LAB: modo celular (html.bc-cel). No computador nada muda: todas as regras ficam presas a
+   html.bc-cel, ligado pelo deck-base.cliente.js só abaixo de 900 px de largura (ou quando o próprio deck entrou no modo
+   celular dele). No celular cada tela vira uma seção empilhada, fundo claro, tipografia por papel e navegação na margem. */
+html.bc-cel{--bc-papel:#F2F1E9;--bc-papel2:#FAF9F4;--bc-tinta:#111110;--bc-tinta2:#3a3a36;--bc-suave:#66665f;--bc-linha:rgba(17,17,16,.12);--bc-cartao:#FFFFFF;--bc-acento:#01A290;--bc-mx:22px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html.bc-cel,html.bc-cel body{width:auto!important;height:auto!important;min-height:0!important;max-width:none!important;max-height:none!important;overflow-x:hidden!important;overflow-y:auto!important;position:static!important;background:var(--bc-papel)!important;cursor:auto!important;touch-action:pan-y pinch-zoom!important;overscroll-behavior:auto!important;zoom:1!important}
+@supports (overflow:clip){html.bc-cel,html.bc-cel body{overflow-x:clip!important}}
+html.bc-cel body{margin:0!important;padding:0!important;user-select:auto!important;-webkit-user-select:auto!important}
+html.bc-cel *{cursor:auto!important}
+html.bc-cel *,html.bc-cel *::before,html.bc-cel *::after{touch-action:auto!important}
+/* palco do deck (stage e quem estiver entre o body e as telas) */
+html.bc-cel [data-bc-palco]{position:static!important;transform:none!important;scale:none!important;translate:none!important;width:auto!important;height:auto!important;min-height:0!important;max-width:none!important;max-height:none!important;margin:0!important;padding:0!important;inset:auto!important;overflow:visible!important;display:block!important;background:transparent!important;zoom:1!important;opacity:1!important;visibility:visible!important;filter:none!important;clip-path:none!important}
+/* cromo do deck (setas, pontos, contador, cursor, cabeçalho fixo, botão de roteiro): some no celular */
+html.bc-cel [data-bc-cromo],html.bc-cel [data-bc-deco],html.bc-cel [data-bc-oculto]{display:none!important}
+html.bc-cel [data-bc-tela] [data-bc-oculto][data-bc-oculto][data-bc-oculto],html.bc-cel [data-bc-tela] [data-bc-deco][data-bc-deco][data-bc-deco]{display:none!important}
+html.bc-cel .bc-rodape{display:flex!important;justify-content:center;padding:28px 22px 44px;background:var(--bc-papel)}
+html.bc-cel .bc-rodape #botao-roteiro{position:static!important;opacity:.8!important;min-height:44px}
+html.bc-cel #painel-roteiro{left:12px!important;right:12px!important;bottom:12px!important;max-height:50svh!important}
+/* cada tela vira uma seção */
+html.bc-cel [data-bc-tela]{position:relative!important;inset:auto!important;display:block!important;float:none!important;width:auto!important;max-width:none!important;height:auto!important;min-height:0!important;max-height:none!important;margin:0!important;padding:60px max(var(--bc-mx),calc((100vw - 660px)/2)) 52px!important;opacity:1!important;visibility:visible!important;transform:none!important;scale:none!important;translate:none!important;filter:none!important;clip-path:none!important;overflow:hidden!important;background:var(--bc-papel)!important;background-image:none!important;color:var(--bc-tinta)!important;pointer-events:auto!important;transition:none!important;animation:none!important;content-visibility:visible!important;scroll-snap-align:start;scroll-margin-top:0;border-top:1px solid var(--bc-linha)!important;box-shadow:none!important;z-index:auto!important;text-align:left!important}
+html.bc-cel [data-bc-tela][data-bc-par]{background:var(--bc-papel2)!important}
+html.bc-cel [data-bc-tela]:first-of-type,html.bc-cel [data-bc-tela="1"]{border-top:0!important}
+html.bc-cel [data-bc-tela]::before,html.bc-cel [data-bc-tela]::after{display:none!important}
+/* tudo dentro da tela entra no fluxo: sem posição absoluta, sem transformação, nada mais largo que a tela */
+html.bc-cel [data-bc-tela] *:not(svg):not(svg *):not([data-bc-manter]):not([data-bc-manter] *){position:static!important;inset:auto!important;float:none!important;transform:none!important;scale:none!important;translate:none!important;rotate:none!important;min-width:0!important;max-width:100%!important;transition:none!important;clip-path:none!important;writing-mode:horizontal-tb!important;column-count:auto!important;columns:auto!important;z-index:auto!important;mix-blend-mode:normal!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html.bc-cel [data-bc-tela] *::before,html.bc-cel [data-bc-tela] *::after{max-width:100%!important}
+html.bc-cel [data-bc-tela] [data-bc-c]{width:auto!important;height:auto!important;min-height:0!important;max-height:none!important;flex:0 1 auto!important;align-self:stretch!important;justify-self:stretch!important;margin-left:0!important;margin-right:0!important;text-overflow:clip!important}
+html.bc-cel [data-bc-tela] [data-bc-c][data-bc-c="inline"]{width:fit-content!important;max-width:100%!important;align-self:flex-start!important;justify-self:start!important}
+html.bc-cel [data-bc-tela] svg{max-width:100%!important;transform:none!important;rotate:none!important;position:static!important;inset:auto!important}
+html.bc-cel [data-bc-tela] svg *{stroke-dashoffset:0!important;animation:none!important;transition:none!important}
+html.bc-cel [data-bc-tela] svg[data-bc-svg="grafico"]{width:100%!important;height:auto!important;display:block!important}
+html.bc-cel [data-bc-tela] svg[data-bc-svg="icone"]{max-width:44px!important;max-height:44px!important}
+html.bc-cel [data-bc-tela] [data-bc-ancora]{position:relative!important}
+html.bc-cel [data-bc-tela] [data-bc-ancora]::before,html.bc-cel [data-bc-tela] [data-bc-ancora]::after{max-height:100%!important;max-width:100%!important}
+/* grades e linhas */
+html.bc-cel [data-bc-tela] [data-bc-grade]{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:none!important;grid-template-areas:none!important;grid-auto-flow:row!important;grid-auto-rows:auto!important;gap:14px!important;align-items:stretch!important;justify-items:stretch!important;align-content:start!important}
+html.bc-cel [data-bc-tela] [data-bc-grade="2"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+html.bc-cel [data-bc-tela] [data-bc-grade="logos"]{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;align-items:center!important}
+html.bc-cel [data-bc-tela] [data-bc-grade="galeria"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+html.bc-cel [data-bc-tela] [data-bc-grade="galeria"] img{width:100%!important;height:auto!important;aspect-ratio:4/3!important;object-fit:cover!important;margin:0!important;max-height:none!important}
+html.bc-cel [data-bc-tela] [data-bc-grade]>*{grid-column:auto!important;grid-row:auto!important;grid-area:auto!important}
+html.bc-cel [data-bc-tela] [data-bc-linha="coluna"]{display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;align-items:stretch!important;justify-content:flex-start!important;gap:14px!important}
+html.bc-cel [data-bc-tela] [data-bc-linha="fica"]{display:flex!important;flex-direction:row!important;flex-wrap:wrap!important;align-items:center!important;justify-content:flex-start!important;gap:10px 14px!important}
+html.bc-cel [data-bc-tela] [data-bc-linha="fica"]>*{flex:0 1 auto!important;width:auto!important}
+html.bc-cel [data-bc-tela] [data-bc-tabela]{display:block!important}
+/* cartões */
+html.bc-cel [data-bc-tela] [data-bc-cartao]{border-radius:inherit;padding:18px 18px!important;box-shadow:none!important}
+html.bc-cel [data-bc-tela] [data-bc-cartao="claro"]{background:var(--bc-cartao)!important;border:1px solid var(--bc-linha)!important;color:var(--bc-tinta)!important}
+html.bc-cel [data-bc-tela] [data-bc-camada]{background:transparent!important;background-image:none!important;border-color:transparent!important;box-shadow:none!important;padding:0!important}
+/* imagens */
+html.bc-cel [data-bc-tela] img,html.bc-cel [data-bc-tela] video,html.bc-cel [data-bc-tela] picture,html.bc-cel [data-bc-tela] canvas{max-width:100%!important;height:auto!important;opacity:1!important;filter:none!important}
+html.bc-cel [data-bc-tela] [data-bc-img="foto"]{display:block!important;width:100%!important;height:auto!important;max-height:72svh!important;object-fit:cover!important;object-position:center!important;margin:6px 0 18px!important;border-radius:0!important;aspect-ratio:auto!important}
+html.bc-cel [data-bc-tela] [data-bc-img="foto"][data-bc-alta]{width:auto!important;max-width:100%!important;max-height:60svh!important;margin-left:auto!important;margin-right:auto!important;object-fit:contain!important}
+html.bc-cel [data-bc-tela] [data-bc-img="capa"]{display:block!important;width:calc(100% + 2 * max(var(--bc-mx),calc((100vw - 660px)/2)))!important;max-width:none!important;margin:-60px calc(-1 * max(var(--bc-mx),calc((100vw - 660px)/2))) 26px!important;height:auto!important;aspect-ratio:4/3!important;object-fit:cover!important;object-position:center!important;border-radius:0!important}
+html.bc-cel [data-bc-tela] [data-bc-img="logo"]{display:inline-block!important;width:auto!important;height:auto!important;max-width:150px!important;max-height:42px!important;object-fit:contain!important;margin:0!important;vertical-align:middle}
+html.bc-cel [data-bc-tela] [data-bc-grade="logos"] [data-bc-img="logo"]{max-width:100%!important;max-height:40px!important;margin:0 auto!important;display:block!important}
+html.bc-cel [data-bc-tela] [data-bc-img="icone"]{display:inline-block!important;width:auto!important;height:auto!important;max-width:44px!important;max-height:44px!important;object-fit:contain!important;margin:0 0 8px!important}
+html.bc-cel [data-bc-tela] [data-bc-fundo]{display:block!important;width:calc(100% + 2 * max(var(--bc-mx),calc((100vw - 660px)/2)))!important;max-width:none!important;height:auto!important;aspect-ratio:4/3;margin:-60px calc(-1 * max(var(--bc-mx),calc((100vw - 660px)/2))) 26px!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;opacity:1!important;filter:none!important;border-radius:0!important}
+html.bc-cel [data-bc-tela] [data-bc-fundo="meio"]{width:100%!important;margin:6px 0 18px!important;aspect-ratio:16/10}
+html.bc-cel [data-bc-tela] iframe{width:100%!important;height:70svh!important;border:0}
+html.bc-cel [data-bc-tela] [data-bc-mapa]>img{width:100%!important;height:auto!important;max-height:none!important;margin:0!important}
+html.bc-cel [data-bc-tela] model-viewer{width:100%!important;height:56svh!important}
+/* texto por papel */
+html.bc-cel [data-bc-tela] [data-bc-papel]{white-space:normal!important;overflow-wrap:break-word!important;word-break:normal!important;hyphens:manual;text-overflow:clip!important;max-width:100%!important;-webkit-line-clamp:unset!important;line-clamp:none!important;text-indent:0!important}
+html.bc-cel [data-bc-tela] [data-bc-papel="capa"]{font-size:clamp(38px,11.2vw,54px)!important;line-height:1.04!important;letter-spacing:-.01em!important;margin:0 0 16px!important;text-wrap:balance}
+html.bc-cel [data-bc-tela] [data-bc-papel="titulo"]{font-size:clamp(29px,8.4vw,40px)!important;line-height:1.06!important;letter-spacing:-.005em!important;margin:0 0 16px!important;text-wrap:balance}
+html.bc-cel [data-bc-tela] [data-bc-papel="titulo3"]{font-size:28px!important;line-height:1.1!important;letter-spacing:0!important;margin:0 0 8px!important;text-wrap:balance}
+html.bc-cel [data-bc-tela] [data-bc-papel="subtitulo"]{font-size:clamp(19px,5.4vw,23px)!important;line-height:1.28!important;letter-spacing:0!important;margin:0 0 8px!important}
+html.bc-cel [data-bc-tela] [data-bc-papel="corpo"]{font-size:clamp(16px,4.4vw,18px)!important;line-height:1.5!important;letter-spacing:0!important;margin:0 0 12px!important}
+html.bc-cel [data-bc-tela] [data-bc-papel="apoio"]{font-size:16px!important;line-height:1.45!important;letter-spacing:0!important;margin:0 0 8px!important}
+html.bc-cel [data-bc-tela] [data-bc-papel="rotulo"]{font-size:13px!important;line-height:1.4!important;letter-spacing:.1em!important;margin:0 0 10px!important}
+html.bc-cel [data-bc-tela] [data-bc-papel="numero"]{white-space:nowrap!important;line-height:1!important;letter-spacing:-.01em!important;margin:4px 0 6px!important;overflow:visible!important}
+html.bc-cel [data-bc-tela] [data-bc-papel="numero"][data-bc-quebra]{white-space:normal!important;text-wrap:balance}
+html.bc-cel [data-bc-tela] [data-bc-papel="fonte"]{font-size:12px!important;line-height:1.4!important;letter-spacing:0!important;margin:18px 0 0!important;color:var(--bc-suave)!important;opacity:1!important;text-transform:none!important;font-weight:400!important}
+html.bc-cel [data-bc-tela] [data-bc-papel] *{font-size:inherit;line-height:inherit!important;margin-top:0!important;margin-bottom:0!important;padding-top:0!important;padding-bottom:0!important}
+html.bc-cel [data-bc-tela] [data-bc-papel] [data-bc-papel]{font-size:inherit!important}
+html.bc-cel [data-bc-tela] [data-bc-acao]{min-height:44px!important;display:inline-flex!important;align-items:center!important;justify-content:center;padding:10px 16px!important;margin:6px 0!important;width:auto!important}
+html.bc-cel [data-bc-tela] li[data-bc-papel]{margin-bottom:8px!important}
+html.bc-cel [data-bc-tela] ul,html.bc-cel [data-bc-tela] ol{padding-left:20px!important;margin:0 0 12px!important}
+html.bc-cel [data-bc-tela] [data-bc-c="lista-limpa"]{padding-left:0!important}
+/* créditos de foto que eram legenda: vão para o pé da tela, pequenos */
+html.bc-cel [data-bc-tela] .bc-fonte{display:block!important;font:400 12px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif!important;color:var(--bc-suave)!important;margin:20px 0 0!important;letter-spacing:0!important;text-transform:none!important}
+/* capa */
+html.bc-cel [data-bc-tela="1"]{display:flex!important;flex-direction:column!important;justify-content:flex-start!important;padding-bottom:56px!important}
+html.bc-cel [data-bc-tela="1"][data-bc-temcapa]{min-height:100svh!important}
+html.bc-cel [data-bc-tela="1"][data-bc-temcapa]{justify-content:flex-start!important}
+html.bc-cel [data-bc-tela="1"]>*{flex:0 0 auto!important}
+html.bc-cel [data-bc-tela="1"] .bc-marcas{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:18px!important;margin:-60px calc(-1 * max(var(--bc-mx),calc((100vw - 660px)/2))) 22px!important;padding:16px max(var(--bc-mx),calc((100vw - 660px)/2))!important;width:auto!important;max-width:none!important}
+html.bc-cel [data-bc-tela="1"] .bc-marcas img,html.bc-cel [data-bc-tela="1"] .bc-marcas svg{height:28px!important;width:auto!important;max-width:44%!important;object-fit:contain!important;display:block!important}
+html.bc-cel [data-bc-tela="1"][data-bc-temcapa] .bc-marcas{margin-bottom:0!important}
+html.bc-cel [data-bc-tela="1"]:not([data-bc-temcapa]) .bc-marcas+*{margin-top:28px!important}
+/* navegação na margem direita: nunca encosta no texto */
+#bc-nav{display:none}
+html.bc-cel #bc-nav{display:flex;position:fixed;right:7px;top:50%;transform:translateY(-50%);flex-direction:column;align-items:center;gap:6px;z-index:2147483000;pointer-events:none;opacity:0;transition:opacity .35s ease}
+html.bc-cel #bc-nav.bc-rolando{opacity:1}
+html.bc-cel #bc-nav i{display:block;width:5px;height:5px;border-radius:3px;background:rgba(17,17,16,.22);transition:height .25s ease,background .25s ease}
+html.bc-cel #bc-nav i.bc-agora{height:16px;background:var(--bc-acento)}
+html.bc-cel #bc-nav.bc-trilho{width:3px;height:34vh;border-radius:2px;background:rgba(17,17,16,.14);gap:0;justify-content:flex-start}
+html.bc-cel #bc-nav.bc-trilho b{display:block;width:3px;border-radius:2px;background:var(--bc-acento);height:0}
+@media (prefers-reduced-motion:reduce){html.bc-cel #bc-nav i{transition:none}}
+/* componente que o deck pede para manter como está no celular (data-bc-manter): só não pode passar da largura */
+html.bc-cel [data-bc-tela] [data-bc-manter]{max-width:100%!important;overflow-x:auto}
+</style>
+<script data-base-deck="1.0.0">
+/* Base de deck da agência 75 LAB (lado do navegador). Injetada pelo motor em todo deck e one-pager (deck-base.ts).
+   No computador não faz nada. No celular (largura abaixo de 900 px, ou quando o próprio deck entrou no modo celular dele)
+   transforma cada tela numa seção empilhada e desenhada para o telefone: fundo claro, tipografia por papel, números que
+   cabem, imagens na largura certa, legenda vira crédito no pé, navegação discreta na margem direita. ?bc=0 desliga. */
+(function () {
+  'use strict';
+  var D = document, H = D.documentElement, W = window;
+  if (W.__bcBase) return; W.__bcBase = 1;
+  var q = {}; try { q = Object.fromEntries(new URLSearchParams(location.search)); } catch (e) {}
+  if (q.bc === '0') return;
+  if (D.querySelector('meta[name="perfil-conferencia"][content="loja-simulada"]')) return;
+  var FORCAR = q.bc === '1';
+  var ATIVAS = ['on', 'active', 'ativa', 'ativo', 'act', 'atual', 'current', 'is-active', 'show', 'visivel', 'in', 'cur', 'atv'];
+  var CREDITO = /^(foto|fotos|imagem|imagens|ilustra[cç][aã]o|ilustrativ|cr[eé]dito|reprodu[cç][aã]o|divulga[cç][aã]o|simula[cç][aã]o|render|mockup|montagem|composi[cç][aã]o|©|\(c\))|foto real|imagem ilustrativa|ilustra[cç][aã]o institucional|meramente ilustrativ|composi[cç][aã]o ilustrativa|\bilustrativ[ao]s?\b|\(simula[cç][aã]o\)/i;
+  var LOGO = /logo|wordmark|brandmark/i;
+  var FONTE = /^\s*(fonte|fontes|source|sources|dados|refer[eê]ncias?)\s*[:·.]/i;
+  function arr(x) { return Array.prototype.slice.call(x || []); }
+  function cs(el, ps) { return W.getComputedStyle(el, ps || null); }
+  function direto(el) { var t = ''; for (var i = 0; i < el.childNodes.length; i++) { var c = el.childNodes[i]; if (c.nodeType === 3) t += c.textContent; } return t.replace(/\s+/g, ' ').trim(); }
+  function texto(el) { return (el.textContent || '').replace(/\s+/g, ' ').trim(); }
+  function rgb(c) { var m = String(c || '').match(/rgba?\(([^)]+)\)/); if (!m) return null; var v = m[1].split(/[ ,/]+/).filter(Boolean).map(parseFloat); return { r: v[0], g: v[1], b: v[2], a: v.length > 3 ? v[3] : 1 }; }
+  function lum(c) { function f(x) { x /= 255; return x <= 0.03928 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4); } return 0.2126 * f(c.r) + 0.7152 * f(c.g) + 0.0722 * f(c.b); }
+  function razao(a, b) { var l1 = lum(a), l2 = lum(b); return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05); }
+  function imp(el, p, v) { el.style.setProperty(p, v, 'important'); }
+  var PAPEL = { r: 242, g: 241, b: 233, a: 1 }, PAPEL2 = { r: 250, g: 249, b: 244, a: 1 }, BRANCO = { r: 255, g: 255, b: 255, a: 1 };
+
+  function deckEmModoCelular() { return /(^|\s)(mob|mobile|celular|is-mobile)(\s|$)/.test(H.className + ' ' + (D.body ? D.body.className : '')); }
+  // largura do aparelho: conteúdo largo demais aumenta o innerWidth no celular, então vale o menor entre janela e tela
+  function largura() { return Math.min(W.innerWidth, (W.screen && W.screen.width) || W.innerWidth); }
+  function querCelular() { if (FORCAR) return true; if (q.bc === 'desk') return false; return largura() < 900 || deckEmModoCelular(); }
+
+  // ---------- telas ----------
+  function acharTelas() {
+    var c = arr(D.querySelectorAll('.slide, section.tela, [data-slide], section.s, .s[data-ch], .s[data-t]'));
+    c = c.filter(function (el) { return !c.some(function (o) { return o !== el && o.contains(el); }); });
+    if (c.length >= 2) return c;
+    // palco de uma tela só (one-pager 1600x900)
+    var st = D.querySelector('#stage, .stage, #palco, .palco, [data-palco], #deck, .deck');
+    if (st) {
+      var filhos = arr(st.children).filter(function (x) { return !/^(script|style|template)$/i.test(x.tagName); });
+      if (filhos.length === 1 && filhos[0].querySelector('h1,h2,h3,p')) return [filhos[0]];
+      return [st];
+    }
+    // página com largura fixa de palco no body (1600, 1440, 1280...)
+    var b = D.body; if (!b) return [];
+    var fixo = arr(b.children).filter(function (x) { if (/^(script|style|template|noscript)$/i.test(x.tagName)) return false; var w = parseFloat(cs(x).width); return w >= 1100 && x.querySelector('h1,h2,h3,p'); });
+    if (fixo.length) return fixo;
+    return [];
+  }
+
+  function classeAtiva(telas) {
+    var vis = telas.filter(function (t) { var s = cs(t); return s.visibility !== 'hidden' && s.display !== 'none' && parseFloat(s.opacity) > 0.5; });
+    for (var i = 0; i < vis.length; i++) {
+      var cand = arr(vis[i].classList).filter(function (k) { return telas.filter(function (o) { return o.classList.contains(k); }).length < telas.length; });
+      for (var j = 0; j < ATIVAS.length; j++) if (cand.indexOf(ATIVAS[j]) >= 0) return ATIVAS[j];
+      if (cand.length === 1 && cand[0].length <= 8) return cand[0];
+    }
+    return 'on';
+  }
+
+  // ---------- fase 1: lê o deck como ele foi desenhado ----------
+  function opacidadeEfetiva(el, ate) { var o = 1; for (var e = el; e && e !== ate && e !== D.body; e = e.parentElement) o *= parseFloat(cs(e).opacity || '1'); return o; }
+  function midiaDentro(el) { return /^(IMG|VIDEO|PICTURE|IFRAME|MODEL-VIEWER)$/.test(el.tagName) || !!el.querySelector('img,video,picture,iframe,model-viewer'); }
+
+  function analisar(telas, ativa) {
+    var fundos = [];
+    telas.forEach(function (t, i) {
+      var rt = t.getBoundingClientRect(), areaT = Math.max(1, rt.width * rt.height);
+      var st = cs(t);
+      t.__bcFundoOriginal = st.backgroundColor;
+      if (/url\(/.test(st.backgroundImage)) fundos.push({ tela: t, el: t, bg: st.backgroundImage, pos: st.backgroundPosition });
+      arr(t.querySelectorAll('*')).forEach(function (el) {
+        var tag = el.tagName;
+        if (el.closest('svg') && tag.toLowerCase() !== 'svg') return;
+        if (el.closest('[data-bc-manter]')) return;
+        if (/^(SCRIPT|STYLE|TEMPLATE|NOSCRIPT|BR|WBR)$/.test(tag)) return;
+        if (el.closest('.roteiro,[data-roteiro],aside[hidden]')) return;
+        var s = cs(el);
+        if (s.display === 'none') return;
+        var abs = s.position === 'absolute' || s.position === 'fixed';
+        var tx = texto(el);
+        var midia = midiaDentro(el);
+        var bgUrl = /url\(/.test(s.backgroundImage);
+        var r = el.getBoundingClientRect(), area = r.width * r.height;
+        if (tag === 'CANVAS' && (abs || area / areaT > 0.4)) { el.setAttribute('data-bc-deco', ''); return; }
+        var stl = el.getAttribute('style') || '';
+        var pb = cs(el, '::before'), pa = cs(el, '::after');
+        if ((pb.content !== 'none' && /absolute|fixed/.test(pb.position)) || (pa.content !== 'none' && /absolute|fixed/.test(pa.position))) el.setAttribute('data-bc-ancora', '');
+        if (abs && el.parentElement && /(left|right)\s*:\s*[\d.]+%/.test(stl) && /(top|bottom)\s*:\s*[\d.]+%/.test(stl) && arr(el.parentElement.children).some(function (x) { return x.tagName === 'IMG' || x.tagName === 'PICTURE'; }) && r.width < 160) {
+          el.setAttribute('data-bc-ponto', ''); el.parentElement.setAttribute('data-bc-mapa', '');
+          el.__bcPos = { left: el.style.left, top: el.style.top, right: el.style.right, bottom: el.style.bottom };
+          return;
+        }
+        if (el.closest('[data-bc-ponto]')) return;
+        // barra de gráfico (preenchimento absoluto dentro de um trilho baixo): fica no trilho, na mesma proporção
+        var pr = el.parentElement ? el.parentElement.getBoundingClientRect() : null, cbg = rgb(s.backgroundColor);
+        if (abs && !tx && !midia && pr && pr.height > 0 && pr.height <= 56 && r.height >= pr.height * 0.4 && ((cbg && cbg.a > 0.3) || /gradient/.test(s.backgroundImage)) && el.parentElement !== t) {
+          el.setAttribute('data-bc-barra', ''); el.parentElement.setAttribute('data-bc-trilho', '');
+          el.__bcBarra = { left: ((r.left - pr.left) / pr.width * 100).toFixed(2) + '%', top: ((r.top - pr.top) / pr.height * 100).toFixed(2) + '%', width: (r.width / pr.width * 100).toFixed(2) + '%', height: (r.height / pr.height * 100).toFixed(2) + '%' };
+          return;
+        }
+        // galeria que troca de foto (uma visível, as outras com opacidade 0 no mesmo lugar): fica só a visível
+        if (abs && parseFloat(s.opacity) < 0.05 && el.parentElement && arr(el.parentElement.children).some(function (x) { if (x === el || x.tagName !== el.tagName) return false; var sx = cs(x); return (sx.position === 'absolute' || sx.position === 'relative') && parseFloat(sx.opacity) > 0.5; })) { el.setAttribute('data-bc-oculto', ''); return; }
+        if (abs && !tx && !midia) {
+          if (bgUrl && area / areaT > 0.1) { el.setAttribute('data-bc-fundo', area / areaT > 0.45 ? 'capa' : 'meio'); fundos.push({ tela: t, el: el }); }
+          else el.setAttribute('data-bc-deco', '');
+          return;
+        }
+        if (abs && tx) {
+          var op = opacidadeEfetiva(el, t), fs = parseFloat(s.fontSize);
+          if ((op > 0.01 && op < 0.3) || fs >= 180 || el.getAttribute('aria-hidden') === 'true') { el.setAttribute('data-bc-deco', ''); return; }
+        }
+        if (!abs && !tx && !midia && bgUrl && area / areaT > 0.25 && !el.children.length) { el.setAttribute('data-bc-fundo', 'meio'); fundos.push({ tela: t, el: el }); }
+        if (abs && midia && !tx && area / areaT > 0.4) el.setAttribute('data-bc-capa-midia', '');
+        if (el.getAttribute('aria-hidden') === 'true' && !tx && !midia && (tag !== 'svg' || (r.width > 120 && !el.querySelector('text')))) el.setAttribute('data-bc-deco', '');
+      });
+    });
+    return fundos;
+  }
+
+  // cabeçalho e navegação do deck que ficam fora das telas (fixos): saem; os logos do cabeçalho vão para a capa
+  function cromo(telas) {
+    var logos = [];
+    var tudo = arr(D.body.querySelectorAll('*'));
+    tudo.forEach(function (el) {
+      if (el.closest('[data-bc-tela]') || el.id === 'bc-nav' || el.closest('#bc-nav')) return;
+      if (telas.some(function (t) { return el.contains(t); })) return;
+      if (/^(SCRIPT|STYLE|TEMPLATE|NOSCRIPT|LINK|META)$/.test(el.tagName)) return;
+      var s = cs(el);
+      var ancestralMarcado = el.parentElement && el.parentElement.closest('[data-bc-cromo]');
+      if (ancestralMarcado) return;
+      if (s.position === 'fixed' || s.position === 'sticky' || (s.position === 'absolute' && el.parentElement && el.parentElement.hasAttribute('data-bc-palco')) || (s.position === 'absolute' && el.parentElement === D.body)) {
+        arr(el.querySelectorAll('img, svg')).forEach(function (im) {
+          if (im.parentElement.closest('svg') || im.closest('button')) return;
+          var rr = im.getBoundingClientRect(); var sv = cs(im);
+          var visivel = rr.width > 24 && rr.height > 10 && sv.display !== 'none' && sv.visibility !== 'hidden' && parseFloat(sv.opacity) > 0.2;
+          var arq = im.tagName === 'IMG' ? decodeURIComponent((im.getAttribute('src') || '').split('?')[0]).toLowerCase() : '';
+          if (visivel || (arq && LOGO.test(arq))) logos.push({ el: im, visivel: visivel, arq: arq });
+        });
+        el.setAttribute('data-bc-cromo', '');
+      }
+    });
+    var saida = logos.filter(function (x) { return !ehCasa(x.el); }).map(function (x) { return x.el; });
+    return saida;
+  }
+
+  // Logos da capa no celular (Caique/coordenação, 13/10/2026: logo da PANCO, da faixa de clientes da casa, apareceu no topo
+  // da proposta da Catupiry). Regra: só o CABEÇALHO do deck (barra fixa ou cabeçalho repetido no topo das telas, antes do
+  // título), só a marca do trabalho e a 75 LAB, nunca marcas-casa nem logo de faixa de clientes. Sem certeza: sem faixa.
+  var MARCA_JOB = (function () { var sc = D.currentScript || D.querySelector('script[data-base-deck]'); return sc ? (sc.getAttribute('data-marca') || '') : ''; })();
+  function semAcento(t) { return String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+  var TOKENS_MARCA = semAcento(MARCA_JOB).replace(/\b(grupo|marca|da|de|do|das|dos|e|the|ltda|sa|s\/a|industria|alimentos|brasil)\b/g, ' ').split(/[^a-z0-9]+/).filter(function (x) { return x.length >= 3; });
+  function caminhoDe(x) { return x && x.tagName === 'IMG' ? semAcento(decodeURIComponent((x.getAttribute('src') || '').split('?')[0])) : ''; }
+  // nome do arquivo + alt (sem a pasta: a pasta do trabalho tem o nome do cliente e casaria com qualquer foto)
+  function nomeLogo(x) { return x && x.tagName === 'IMG' ? semAcento(caminhoDe(x).split('/').pop() + ' ' + (x.getAttribute('alt') || '') + ' ' + (x.getAttribute('class') || '')) : semAcento(x && x.getAttribute ? (x.getAttribute('aria-label') || '') : ''); }
+  function eh75lab(x) { return /75\s?lab|setenta e cinco/.test(nomeLogo(x)) || /marca-75lab/.test(caminhoDe(x)); }
+  function ehCasa(x) { return /marcas-casa|clientes-casa|marcas_atendidas|\/cases\//.test(caminhoDe(x)); }
+  function ehLogo(x) { return LOGO.test(nomeLogo(x)) || eh75lab(x); }
+  function ehDaMarca(x) { var n = nomeLogo(x); return TOKENS_MARCA.length ? TOKENS_MARCA.some(function (t) { return n.indexOf(t) >= 0; }) : false; }
+  function cabecalhosDasTelas(telas) {
+    var porClasse = {}, cands = [];
+    telas.forEach(function (t, i) {
+      var titulo = t.querySelector('h1, h2');
+      arr(t.querySelectorAll('*')).forEach(function (el) {
+        // só logos (aceita um separador como "×" entre eles)
+        if (el.closest('svg') || texto(el).replace(/[×x+|·•\/\s-]/gi, '').length) return;
+        // cabeçalho é filho da tela (ou do primeiro invólucro) e vem antes do título
+        if (!(el.parentElement === t || (el.parentElement && el.parentElement.parentElement === t))) return;
+        var ims = arr(el.querySelectorAll('img')).concat(el.tagName === 'IMG' ? [el] : []);
+        var parDeMarcas = ims.length >= 2 && ims.some(eh75lab);
+        if (titulo && !parDeMarcas && !(el.compareDocumentPosition(titulo) & Node.DOCUMENT_POSITION_FOLLOWING)) return;
+        if (!ims.length || ims.length > 3) return;
+        if (ims.some(ehCasa)) return;
+        if (!ims.every(ehLogo)) return;
+        // faixa de marcas: irmãos com logos de outras empresas = não é cabeçalho
+        var irmaosComLogo = el.parentElement ? arr(el.parentElement.children).filter(function (x) { return x !== el && !texto(x).replace(/[×x+|·•\/\s-]/gi, '').length && x.querySelector && x.querySelector('img'); }).length : 0;
+        if (irmaosComLogo >= 2) return;
+        var chave = el.tagName + '.' + String(el.className || '').trim().split(/\s+/).sort().join('.');
+        porClasse[chave] = (porClasse[chave] || 0) + 1;
+        cands.push({ el: el, tela: i, chave: chave, ims: ims });
+      });
+    });
+    var pool = [];
+    cands.forEach(function (c) {
+      // par de logos (marca + 75 LAB) antes do título é cabeçalho em qualquer tela, mesmo com classe diferente
+      if (porClasse[c.chave] < 2 && c.tela !== 0 && !(c.ims.length >= 2 && c.ims.some(eh75lab))) return;
+      c.ims.forEach(function (x) { pool.push(x); });
+      c.el.setAttribute('data-bc-oculto', '');
+    });
+    return pool;
+  }
+  // escolhe no máximo 2 logos: a marca do trabalho e a 75 LAB, na versão para fundo claro quando existir
+  function logosDaCapa(pool) {
+    var CLARO = /branc|white|negativ|lime|light|inverse|claro/;
+    var vistos = {}, unicos = [];
+    pool.forEach(function (x) { if (ehCasa(x) || !ehLogo(x)) return; var k = nomeLogo(x).split(' ')[0] || x.outerHTML.slice(0, 120); if (!vistos[k]) { vistos[k] = 1; unicos.push(x); } });
+    function melhor(lista) { var escuro = lista.filter(function (x) { return !CLARO.test(nomeLogo(x)); }); return (escuro.length ? escuro : lista)[0] || null; }
+    var lab = melhor(unicos.filter(eh75lab));
+    var cliLista = unicos.filter(function (x) { return !eh75lab(x); });
+    if (TOKENS_MARCA.length) cliLista = cliLista.filter(ehDaMarca);
+    else if (cliLista.length > 1) cliLista = [];
+    var cli = melhor(cliLista);
+    var saida = [cli, lab].filter(Boolean);
+    saida.__claro = saida.length && saida.every(function (x) { return !CLARO.test(nomeLogo(x)); });
+    return saida;
+  }
+
+  // ---------- fase 2: desenha para o celular ----------
+  function papelDoTexto(el, base, ehCapa) {
+    var s = cs(el), tag = el.tagName, tx = texto(el), fs = parseFloat(s.fontSize), r = fs / base;
+    var palavras = tx.split(' ').length;
+    var cls = String(el.className && el.className.baseVal !== undefined ? el.className.baseVal : el.className || '');
+    if (/^\d{1,2}\s*\/\s*\d{1,2}$/.test(tx)) return 'contador';
+    if (tx.length <= 70 && /(setas do teclado|use as setas|deslize para|arraste para|toque para avan|clique para avan|swipe|tecla [a-z]\b|aperte f\b|tela cheia com)/i.test(tx)) return 'contador';
+    if (FONTE.test(tx) || /(^|[\s_-])(fonte|fontes|source|rodape-fonte)([\s_-]|$)/i.test(cls)) return 'fonte';
+    var digitos = /\d/.test(tx) && (tx.replace(/\D/g, '').length >= 2 || /[%+$×x]/.test(tx) || r >= 3.2), curto = tx.length <= 16;
+    if ((r >= 1.9 || /(^|[\s_-])(num|numero|kpi|stat|big|cnt|count|valor)([\s_-]|$)/i.test(cls)) && digitos && curto && !/^H[1-3]$/.test(tag)) return 'numero';
+    var pesado = parseInt(s.fontWeight, 10) >= 600 || /shoulders|anton|oswald|bebas|condensed|display|impact|archivo black|league gothic/i.test(s.fontFamily);
+    if (!/^H[1-3]$/.test(tag) && tx.length <= 11 && pesado && digitos && /^[\s+\-~≈R$€%x×.,:\/\d]+(\s?(mi|bi|mil|k|%|x|anos?|pp|p\.p\.))?\+?$/i.test(tx) && /\d/.test(tx) && !/^\d{1,2}\s*\/\s*\d{1,2}$/.test(tx)) return 'numero';
+    if (tag === 'H1') return ehCapa ? 'capa' : 'titulo';
+    if (tag === 'H2') return ehCapa && r >= 2.4 ? 'capa' : 'titulo';
+    if (tag === 'H3' || /titulo|title|headline/i.test(cls)) return r >= 2.4 ? 'titulo' : 'titulo3';
+    if (r >= 2.4) return ehCapa ? 'capa' : 'titulo';
+    if (tag === 'H4' || tag === 'H5' || r >= 1.32) return 'subtitulo';
+    var mono = /mono|courier|code/i.test(s.fontFamily);
+
+    if (mono && palavras > 12 && r <= 1.0 && tag !== 'P' || mono && palavras > 18 && r < 0.95) return 'fonte';
+    if (/(^|[\s_-])(src|nota|notas|obs|disclaimer|rodape)([\s_-]|$)/i.test(cls) && r < 0.95 && palavras > 3) return 'fonte';
+    if ((s.textTransform === 'uppercase' || mono) && palavras <= 12 && tx.length <= 90) return 'rotulo';
+    if (r < 0.86 && palavras <= 8) return 'apoio';
+    return 'corpo';
+  }
+
+  function corEfetivaDeFundo(el, tela) {
+    for (var e = el; e && e !== tela; e = e.parentElement) {
+      if (e.hasAttribute('data-bc-camada')) continue;
+      var s = cs(e);
+      if (/url\(/.test(s.backgroundImage) && !e.hasAttribute('data-bc-fundo')) return null;
+      var c = rgb(s.backgroundColor);
+      if (c && c.a > 0.55) return c;
+    }
+    return tela.hasAttribute('data-bc-par') ? PAPEL2 : PAPEL;
+  }
+
+  function escurecer(c, fundo, alvo) {
+    var r = c.r, g = c.g, b = c.b;
+    for (var i = 0; i < 24 && razao({ r: r, g: g, b: b }, fundo) < alvo; i++) { r *= 0.86; g *= 0.86; b *= 0.86; }
+    return 'rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.round(b) + ')';
+  }
+
+  function classificarImagem(im) {
+    if (im.hasAttribute('data-bc-img') && !im.hasAttribute('data-bc-provisoria')) return;
+    im.removeAttribute('data-bc-provisoria');
+    var nw = im.naturalWidth, nh = im.naturalHeight;
+    if (!nw || !nh) { im.setAttribute('data-bc-img', LOGO.test((im.getAttribute('alt') || '') + ' ' + (im.getAttribute('src') || '').split('?')[0]) ? 'logo' : 'foto'); im.setAttribute('data-bc-provisoria', ''); return; }
+    var arq = decodeURIComponent((im.getAttribute('src') || '').split('?')[0]).split('/').pop().toLowerCase();
+    var dica = ((im.getAttribute('alt') || '') + ' ' + arq + ' ' + (im.className || '') + ' ' + (im.parentElement ? im.parentElement.className : '')).toLowerCase();
+    var asp = nw / nh;
+    var tipo;
+    var ehLogo = /logo|wordmark|brandmark/.test(arq + ' ' + (im.className || '')) || /^(logo|logotipo|marca)\b/.test((im.getAttribute('alt') || '').toLowerCase()) || /\blogo(tipo)?\b/.test((im.getAttribute('alt') || '').toLowerCase());
+    if (ehLogo || (asp >= 2.4 && nh <= 360 && !/foto|kv|hero|banner|capa|gondola|loja|render/.test(dica))) tipo = 'logo';
+    else if (Math.max(nw, nh) <= 180 || /icone|icon|ico[-_]/.test(dica)) tipo = 'icone';
+    else tipo = im.hasAttribute('data-bc-capa-midia') || (im.closest('[data-bc-capa-midia]') && im.closest('[data-bc-tela="1"]')) ? 'capa' : 'foto';
+    im.setAttribute('data-bc-img', tipo);
+    if (tipo === 'foto' && asp < 0.8) im.setAttribute('data-bc-alta', '');
+  }
+
+  function ajustarNumero(el) {
+    el.removeAttribute('data-bc-quebra');
+    var pai = el.parentElement; var disp = Math.max(120, (pai ? pai.clientWidth - parseFloat(cs(pai).paddingLeft) - parseFloat(cs(pai).paddingRight) : W.innerWidth - 44));
+    disp = Math.min(disp, W.innerWidth - 44);
+    var max = Math.min(68, Math.round(W.innerWidth * 0.165)), min = 30;
+    imp(el, 'font-size', max + 'px');
+    imp(el, 'display', 'block');
+    var w = el.scrollWidth;
+    if (w > disp) {
+      var novo = Math.max(min, Math.floor(max * disp / w) - 1);
+      imp(el, 'font-size', novo + 'px');
+      if (el.scrollWidth > disp + 1) el.setAttribute('data-bc-quebra', '');
+    }
+  }
+
+  function legendas(tela) {
+    var achadas = [];
+    arr(tela.querySelectorAll('figcaption, [class*=legenda], [class*=caption], [class*=credito], [class*=credit]')).forEach(function (c) { if (texto(c)) achadas.push(c); });
+    // texto curto de crédito colado a uma imagem (embaixo ou por cima dela)
+    arr(tela.querySelectorAll('img, [data-bc-fundo], picture')).forEach(function (im) {
+      var cont = im.parentElement; if (!cont) return;
+      var cands = arr(cont.children).concat(cont.parentElement ? arr(cont.parentElement.children) : []);
+      cands.forEach(function (c) {
+        if (c === im || c.contains(im) || achadas.indexOf(c) >= 0 || c.hasAttribute('data-bc-proprio')) return;
+        var t = texto(c);
+        if (!t || t.length > 140 || c.querySelector('img, h1, h2, h3, h4') || /^H[1-4]$/.test(c.tagName)) return;
+        var logoPerto = im.tagName === 'IMG' && LOGO.test((im.getAttribute('alt') || '') + (im.getAttribute('src') || '').split('?')[0]);
+        // texto curto logo depois da foto (irmão seguinte) e menor que o corpo também é legenda
+        var colado = (c === im.nextElementSibling || c === (im.parentElement && im.parentElement.nextElementSibling)) && parseFloat(cs(c).fontSize) <= 15 && t.length >= 6 && t.length <= 90 && /[a-zà-ú]{3}/i.test(t) && !FONTE.test(t);
+        var depois = c === im.nextElementSibling || c === (im.parentElement && im.parentElement.nextElementSibling);
+        var creditoColado = depois && t.length <= 140 && /ilustra|simula|\bfoto|imagem|render|montagem|mockup/i.test(t);
+        if ((CREDITO.test(t) || colado || creditoColado) && !logoPerto) achadas.push(c);
+      });
+    });
+    // legenda e crédito de imagem SOMEM (Caique, 13/10/2026): só a fonte de DADO fica, pequena, no pé da tela
+    achadas.forEach(function (c) { c.setAttribute('data-bc-oculto', ''); });
+  }
+
+  // tira de linhas de fonte e de rótulos os trechos que são crédito de imagem ("Fotos: ...", "imagem ilustrativa")
+  var TRECHO_CREDITO = /^(fotos?|imagens?|ilustra[cç][aã]o|ilustra[cç][oõ]es|ilustrativ\w*|cr[eé]ditos?|reprodu[cç][aã]o|divulga[cç][aã]o|render|mockup|montagem|composi[cç][aã]o ilustrativa|simula[cç][aã]o)\b|imagem ilustrativa|imagens ilustrativas|foto real|fotos reais|ilustra[cç][aã]o institucional|meramente ilustrativ|imagem de fundo|\(simula[cç][aã]o\)/i;
+  function semCreditoDeImagem(tela) {
+    arr(tela.querySelectorAll('[data-bc-papel="fonte"], [data-bc-papel="rotulo"], [data-bc-papel="apoio"], [data-bc-papel="corpo"]')).forEach(function (el) {
+      var papel = el.getAttribute('data-bc-papel');
+      arr(el.childNodes).forEach(function (n) {
+        if (n.nodeType !== 3 || !n.textContent.trim()) return;
+        var partes = n.textContent.split(/(\s*[·|]\s*|(?<=[.;])\s+)/);
+        var saida = [], mudou = false;
+        for (var k = 0; k < partes.length; k += 2) {
+          var seg = partes[k], sep = partes[k + 1] || '';
+          var forte = /^(imagens? ilustrativas?|foto real|fotos reais|ilustra[cç][aã]o institucional|simula[cç][aã]o|imagem de fundo ilustrativa)\.?$/i.test(seg.trim());
+          if (seg.trim() && TRECHO_CREDITO.test(seg.trim()) && (papel === 'fonte' || (papel === 'corpo' ? forte : /imagem ilustrativa|foto real|ilustra[cç][aã]o|simula[cç][aã]o|^fotos?\s*:|^imagens?\s*:|cr[eé]dito/i.test(seg.trim())))) { mudou = true; continue; }
+          saida.push(seg + sep);
+        }
+        if (mudou) n.textContent = saida.join('').replace(/[\s·|,;]+$/, '').replace(/^[\s·|,;]+/, '');
+      });
+      var tx = texto(el).replace(/^(fontes?|sources?)\s*[:·.]\s*$/i, '');
+      if (!tx || !/[a-z0-9]{2}/i.test(tx)) el.setAttribute('data-bc-oculto', '');
+    });
+  }
+
+  function tabelas(tela) {
+    arr(tela.querySelectorAll('table')).forEach(function (tb) {
+      var linhas = arr(tb.rows); if (!linhas.length) return;
+      var cab = arr((tb.tHead && tb.tHead.rows[0] ? tb.tHead.rows[0] : linhas[0]).cells).map(texto);
+      if (cab.length <= 2) return;
+      var temCab = !!(tb.tHead && tb.tHead.rows[0]) || arr(linhas[0].cells).every(function (c) { return c.tagName === 'TH'; });
+      var box = D.createElement('div'); box.setAttribute('data-bc-proprio', ''); box.setAttribute('data-bc-grade', '');
+      linhas.slice(temCab ? 1 : 0).forEach(function (tr) {
+        if (tr.parentElement && tr.parentElement.tagName === 'THEAD') return;
+        var card = D.createElement('div'); card.setAttribute('data-bc-cartao', 'claro'); card.setAttribute('data-bc-c', '');
+        arr(tr.cells).forEach(function (td, i) {
+          var l = D.createElement('div'); l.setAttribute('data-bc-c', '');
+          var rot = cab[i] && temCab ? cab[i] : '';
+          var tt = (td.innerText || td.textContent || '').replace(/\s+/g, ' ').trim();
+          if (i === 0) { l.setAttribute('data-bc-papel', 'subtitulo'); l.textContent = tt; }
+          else { l.setAttribute('data-bc-papel', 'apoio'); l.textContent = (rot ? rot + ': ' : '') + tt; }
+          card.appendChild(l);
+        });
+        box.appendChild(card);
+      });
+      tb.setAttribute('data-bc-oculto', '');
+      tb.parentElement.insertBefore(box, tb.nextSibling);
+    });
+  }
+
+  function aplicar(telas, ativa, fundos, logos) {
+    H.classList.add('bc-cel');
+    var corpoTamanhos = [];
+    telas.forEach(function (t, i) {
+      if (i % 2 === 1) t.setAttribute('data-bc-par', '');
+      if (ativa) t.classList.add(ativa);
+      arr(t.querySelectorAll('p, li')).forEach(function (p) { var tx = texto(p); if (tx.length > 40) corpoTamanhos.push(parseFloat(cs(p).fontSize)); });
+    });
+    // tamanho de corpo do deck (mediana): referência para saber o que é título, número, apoio
+    corpoTamanhos.sort(function (a, b) { return a - b; });
+    var base = corpoTamanhos.length ? corpoTamanhos[Math.floor(corpoTamanhos.length / 2)] : 18;
+    if (!(base > 6)) base = 18;
+
+    telas.forEach(function (t, i) {
+      var ehCapa = i === 0;
+      // foto que era fundo da tela vira bloco no topo
+      fundos.filter(function (f) { return f.tela === t && f.el === t; }).forEach(function (f) {
+        var d = D.createElement('div'); d.setAttribute('data-bc-fundo', 'capa'); d.setAttribute('data-bc-proprio', '');
+        d.style.backgroundImage = f.bg; t.insertBefore(d, t.firstChild);
+      });
+      var els = arr(t.querySelectorAll('*'));
+      // contêineres, grades e linhas
+      els.forEach(function (el) {
+        if (el.closest('svg') && el.tagName.toLowerCase() !== 'svg') return;
+        if (el.hasAttribute('data-bc-deco') || el.closest('[data-bc-deco]') || el.closest('[data-bc-ponto]') || el.closest('[data-bc-manter]')) return;
+        var s = cs(el), tag = el.tagName;
+        if (tag === 'svg' || tag === 'SVG') {
+          var rs = el.getBoundingClientRect(); var vb = el.getAttribute('viewBox');
+          var grande = rs.width > 150 || el.querySelector('text') || (vb && parseFloat(vb.split(/[ ,]+/)[2]) > 200);
+          if (!vb && el.getAttribute('width') && el.getAttribute('height') && grande) el.setAttribute('viewBox', '0 0 ' + parseFloat(el.getAttribute('width')) + ' ' + parseFloat(el.getAttribute('height')));
+          el.setAttribute('data-bc-svg', grande ? 'grafico' : 'icone');
+          return;
+        }
+        if (/^(IMG|VIDEO|CANVAS|IFRAME|PICTURE|SOURCE|MODEL-VIEWER|INPUT|SELECT|TEXTAREA|BR|HR)$/.test(tag)) return;
+        var tx = texto(el);
+        var cfx = rgb(s.backgroundColor), selo = tx.length <= 24 && !midiaDentro(el) && el.children.length <= 2 && ((cfx && cfx.a > 0.3) || (parseFloat(s.borderTopWidth) > 0 && s.borderTopStyle !== 'none' && parseFloat(s.borderLeftWidth) > 0)) && !/^H[1-4]$/.test(tag);
+        if (tx || midiaDentro(el) || el.querySelector('svg')) el.setAttribute('data-bc-c', selo || (s.display.indexOf('inline') === 0 && !el.children.length) ? 'inline' : '');
+        if (/^(UL|OL)$/.test(tag) && s.listStyleType === 'none') el.setAttribute('data-bc-c', 'lista-limpa');
+        if (s.display === 'grid' || s.display === 'inline-grid') {
+          var filhos = arr(el.children).filter(function (c) { return cs(c).display !== 'none' && !c.hasAttribute('data-bc-deco'); });
+          var soLogos = filhos.length >= 3 && filhos.every(function (c) { return !texto(c) && c.querySelector('img, svg') || c.tagName === 'IMG'; });
+          if (soLogos && !filhos.some(function (c) { var im = c.tagName === 'IMG' ? c : c.querySelector('img'); return im && LOGO.test(nomeLogo(im)); })) { el.setAttribute('data-bc-grade', 'galeria'); return; }
+          var curtos = filhos.length >= 2 && filhos.length <= 4 && filhos.every(function (c) { var tt = texto(c); return tt.length <= 18 && !c.querySelector('img'); }) && filhos.some(function (c) { return /\d/.test(texto(c)); });
+          var poucosLogos = filhos.length >= 2 && filhos.length <= 3 && filhos.every(function (c) { var im = c.tagName === 'IMG' ? c : c.querySelector('img'); return !texto(c) && im && LOGO.test((im.getAttribute('alt') || '') + ' ' + (im.getAttribute('src') || '').split('?')[0]); });
+          var chips = filhos.length >= 3 && filhos.every(function (c) { var tt = texto(c); return tt.length > 0 && tt.length <= 24 && !/\d/.test(tt) && !c.querySelector('img, p, h1, h2, h3, h4, li'); });
+          if (poucosLogos || chips) el.setAttribute('data-bc-linha', 'fica');
+          else el.setAttribute('data-bc-grade', soLogos ? 'logos' : curtos && filhos.length % 2 === 0 ? '2' : '');
+        } else if ((s.display === 'flex' || s.display === 'inline-flex') && /row/.test(s.flexDirection)) {
+          var fl = arr(el.children).filter(function (c) { return cs(c).display !== 'none' && !c.hasAttribute('data-bc-deco'); });
+          var soLog = fl.length >= 3 && fl.every(function (c) { return !texto(c) && (c.tagName === 'IMG' || c.querySelector('img, svg')); });
+          var galeria = soLog && !fl.some(function (c) { var im = c.tagName === 'IMG' ? c : c.querySelector('img'); return im && LOGO.test(nomeLogo(im)); });
+          if (galeria) { el.setAttribute('data-bc-grade', 'galeria'); return; }
+          var somaTexto = fl.reduce(function (a, c) { return a + texto(c).length; }, 0);
+          var iconeComTexto = fl.some(function (c) { return texto(c) && c.querySelector('svg, img'); });
+          var pequenos = !iconeComTexto && fl.length <= 4 && somaTexto <= 48 && fl.every(function (c) { var tt = texto(c); var img = c.tagName === 'IMG' ? c : (!tt ? c.querySelector('img') : null); return tt.length <= 28 && !c.querySelector('p, h1, h2, h3, h4, li') && !(img && !LOGO.test((img.getAttribute('alt') || '') + (img.getAttribute('src') || '').split('?')[0]) && (img.naturalWidth > 260 || !img.naturalWidth)); });
+          el.setAttribute('data-bc-linha', soLog ? 'fica' : pequenos ? 'fica' : 'coluna');
+          if (soLog) el.setAttribute('data-bc-grade', 'logos');
+        } else if (/^table/.test(s.display) && tag !== 'TABLE') { el.setAttribute('data-bc-linha', 'coluna'); }
+      });
+      tabelas(t);
+      // papéis do texto
+      var marcados = [];
+      els.forEach(function (el) {
+        if (el.closest('svg') || el.closest('[data-bc-deco]') || el.closest('[data-bc-oculto]') || el.closest('[data-bc-ponto]') || el.closest('[data-bc-manter]') || el.closest('.roteiro,[data-roteiro],aside[hidden]')) return;
+        if (/^(SCRIPT|STYLE|TEMPLATE|NOSCRIPT|OPTION|SELECT|TEXTAREA)$/.test(el.tagName)) return;
+        if (!direto(el)) return;
+        var s = cs(el);
+        if (s.display === 'none') return;
+        var dentro = marcados.some(function (m) { return m.contains(el); });
+        if (dentro && s.display.indexOf('inline') === 0) return;
+        // título montado com palavras em <span> (animação por palavra): quem recebe o papel é o bloco inteiro
+        var sobe = el;
+        while (sobe.parentElement && sobe.parentElement !== t && cs(sobe.parentElement).display.indexOf('inline') === 0 && !direto(sobe.parentElement)) sobe = sobe.parentElement;
+        var pai = sobe.parentElement;
+        var titulo = pai && /^H[1-4]$/.test(pai.tagName) && !direto(pai);
+        if (pai && pai !== t && !pai.hasAttribute('data-bc-papel') && texto(pai).length <= 220 && (titulo || (cs(sobe).display.indexOf('inline') === 0 && cs(pai).display.indexOf('inline') !== 0 && arr(pai.children).every(function (c) { return cs(c).display.indexOf('inline') === 0 || c.tagName === 'BR'; })))) {
+          el = pai; s = cs(el);
+        }
+        // linhas de um título (cada linha num bloco): o papel vai para o título inteiro
+        while (el.parentElement && el.parentElement !== t && /^H[1-4]$/.test(el.parentElement.tagName) && !direto(el.parentElement) && !el.parentElement.hasAttribute('data-bc-papel')) { el = el.parentElement; s = cs(el); }
+        if (marcados.indexOf(el) >= 0 || el.hasAttribute('data-bc-papel')) return;
+        var papel = papelDoTexto(el, base, ehCapa);
+        if (papel === 'contador') { el.setAttribute('data-bc-oculto', ''); return; }
+        el.setAttribute('data-bc-papel', papel);
+        if (papel === 'rotulo' && s.textTransform !== 'uppercase') imp(el, 'font-size', '14px');
+        marcados.push(el);
+      });
+      // ações (links e botões soltos) com área de toque de 44 px
+      arr(t.querySelectorAll('a[href], button, [role=button]')).forEach(function (a) {
+        if (a.closest('[data-bc-deco]') || a.closest('[data-bc-oculto]') || a.closest('[data-bc-ponto]')) return;
+        var p = a.parentElement && a.parentElement.closest('[data-bc-papel="corpo"], [data-bc-papel="apoio"], [data-bc-papel="fonte"]');
+        if (!p && texto(a).length <= 60) a.setAttribute('data-bc-acao', '');
+      });
+      // cartões e camadas de fundo
+      var rt = t.getBoundingClientRect(), areaT = Math.max(1, rt.width * rt.height);
+      els.forEach(function (el) {
+        if (!el.hasAttribute('data-bc-c') || el.hasAttribute('data-bc-papel') && !el.children.length) return;
+        var s = cs(el); var c = rgb(s.backgroundColor); var r = el.getBoundingClientRect();
+        var temBorda = parseFloat(s.borderTopWidth) > 0 && s.borderTopStyle !== 'none' || parseFloat(s.borderLeftWidth) > 0 && s.borderLeftStyle !== 'none';
+        var corBorda = rgb(s.borderTopColor) || rgb(s.borderLeftColor);
+        if (c && c.a > 0.55 && (r.width * r.height) / areaT > 0.62 && el.parentElement && (el.parentElement === t || el.parentElement.closest('[data-bc-tela]') === t && (r.width >= rt.width - 2))) { el.setAttribute('data-bc-camada', ''); return; }
+        if (c && c.a > 0.02 && c.a <= 0.55 || (temBorda && corBorda && lum(corBorda) > 0.6 && (!c || c.a <= 0.55))) {
+          if (texto(el).length > 6 && r.height > 40) el.setAttribute('data-bc-cartao', 'claro');
+        } else if (c && c.a > 0.55 && texto(el).length > 6 && r.height > 40) el.setAttribute('data-bc-cartao', '');
+      });
+      // espaços grandes do desenho de 1600 px viram o ritmo do celular
+      els.forEach(function (el) {
+        if (!el.hasAttribute('data-bc-c')) return;
+        if (el.hasAttribute('data-bc-papel') || el.hasAttribute('data-bc-img') || el.hasAttribute('data-bc-acao')) return;
+        var s = cs(el);
+        var mt = parseFloat(s.marginTop), mb = parseFloat(s.marginBottom);
+        if (mt > 22 || mt < 0) imp(el, 'margin-top', mt < 0 ? '0px' : '20px');
+        if (mb > 22 || mb < 0) imp(el, 'margin-bottom', mb < 0 ? '0px' : '20px');
+        if (!el.hasAttribute('data-bc-cartao')) {
+          var cf = rgb(s.backgroundColor), comFundo = cf && cf.a > 0.05 || /url\(|gradient/.test(s.backgroundImage);
+          ['left', 'right', 'top', 'bottom'].forEach(function (lado) {
+            var pv = parseFloat(s.getPropertyValue('padding-' + lado)), borda = parseFloat(s.getPropertyValue('border-' + lado + '-width')) > 0 && s.getPropertyValue('border-' + lado + '-style') !== 'none';
+            if (borda || comFundo) { if (pv > 22) imp(el, 'padding-' + lado, '16px'); }
+            else if (pv > (lado === 'left' || lado === 'right' ? 24 : 16)) imp(el, 'padding-' + lado, '0px');
+          });
+        }
+        var g = parseFloat(s.rowGap); if (g > 18) imp(el, 'row-gap', '14px');
+        var cg = parseFloat(s.columnGap); if (cg > 18) imp(el, 'column-gap', '14px');
+        if (s.whiteSpace === 'nowrap' && texto(el).length > 18) imp(el, 'white-space', 'normal');
+      });
+      arr(t.querySelectorAll('[data-bc-mapa]')).forEach(function (m) { imp(m, 'position', 'relative'); imp(m, 'width', '100%'); });
+      arr(t.querySelectorAll('[data-bc-trilho]')).forEach(function (m) { imp(m, 'position', 'relative'); });
+      arr(t.querySelectorAll('[data-bc-barra]')).forEach(function (b) { var o = b.__bcBarra || {}; imp(b, 'position', 'absolute'); imp(b, 'inset', 'auto'); ['left', 'top', 'width', 'height'].forEach(function (k) { if (o[k]) imp(b, k, o[k]); }); });
+      arr(t.querySelectorAll('[data-bc-ponto]')).forEach(function (pt) {
+        var o = pt.__bcPos || {}; imp(pt, 'position', 'absolute'); imp(pt, 'inset', 'auto');
+        ['left', 'top', 'right', 'bottom'].forEach(function (k) { if (o[k]) imp(pt, k, o[k]); });
+        imp(pt, 'min-width', '44px'); imp(pt, 'min-height', '44px'); imp(pt, 'transform', 'translate(-50%,-50%)'); imp(pt, 'z-index', '2');
+      });
+      arr(t.querySelectorAll('iframe')).forEach(function (f) {
+        if (!f.getAttribute('src')) { var u = f.getAttribute('data-src') || f.getAttribute('data-depois') || f.getAttribute('data-url') || f.getAttribute('data-antes'); if (u) f.setAttribute('src', u); }
+        f.setAttribute('loading', 'eager');
+      });
+      legendas(t);
+      semCreditoDeImagem(t);
+      // fonte de dado vai para o pé da tela
+      arr(t.querySelectorAll('[data-bc-papel="fonte"]')).forEach(function (f) {
+        var dono = f.parentElement && f.parentElement.closest('[data-bc-cartao]');
+        if (!dono && f.parentElement !== t) t.appendChild(f);
+      });
+    });
+    cores(telas);
+    // capa: logos do cabeçalho do deck
+    var capa = telas[0];
+    // a capa já mostra os logos no próprio conteúdo (antes do título): não repete numa faixa
+    var tituloCapa = capa && capa.querySelector('h1, h2');
+    var logosNaCapa = capa ? arr(capa.querySelectorAll('img')).filter(function (im) { return ehLogo(im) && !ehCasa(im) && !im.closest('[data-bc-oculto],[data-bc-deco],[data-bc-cromo]') && (!tituloCapa || (im.compareDocumentPosition(tituloCapa) & Node.DOCUMENT_POSITION_FOLLOWING)); }) : [];
+    if (logosNaCapa.length) logos = [];
+    // cabeçalho repetido: na capa ele aparece no lugar da faixa (só logos da marca e da 75 LAB)
+    if (!logosNaCapa.length && capa) arr(capa.querySelectorAll('[data-bc-oculto]')).forEach(function (h) { if (h.querySelector('img') && arr(h.querySelectorAll('img')).every(function (im) { return ehLogo(im) && !ehCasa(im) && (eh75lab(im) || ehDaMarca(im) || !TOKENS_MARCA.length); }) && !h.closest('[data-bc-deco]') && !arr(h.querySelectorAll('img')).some(function (im) { return /branc|white|negativ|lime|light|inverse|claro/.test(nomeLogo(im)); })) { h.removeAttribute('data-bc-oculto'); logos = []; } });
+    if (capa && logos.length && !capa.querySelector('.bc-marcas')) {
+      var barra = D.createElement('div'); barra.className = 'bc-marcas'; barra.setAttribute('data-bc-proprio', '');
+      var vistos = [];
+      logos.slice(0, 2).forEach(function (im) { var k = im.tagName === 'IMG' ? im.currentSrc || im.src : im.outerHTML.slice(0, 200); if (vistos.indexOf(k) >= 0) return; vistos.push(k); var c = im.cloneNode(true); arr(c.attributes).map(function (a) { return a.name; }).forEach(function (n) { if (/^(id|class|style|loading|data-bc-)/.test(n) || n.indexOf('data-bc-') === 0) c.removeAttribute(n); }); c.setAttribute('data-bc-proprio', ''); barra.appendChild(c); });
+      var fundoCapa = rgb(capa.__bcFundoOriginal);
+      var foto = capa.querySelector('[data-bc-fundo="capa"], [data-bc-img="capa"], [data-bc-capa-midia]');
+      var algumClaro = logos.some(function (x) { return /branc|white|negativ|lime|light|inverse|claro/.test(nomeLogo(x)); });
+      if (logos.__claro && !algumClaro) barra.style.background = 'transparent';
+      else if (algumClaro) barra.style.background = fundoCapa && fundoCapa.a > 0.5 && lum(fundoCapa) < 0.35 ? capa.__bcFundoOriginal : '#111110';
+      else if (fundoCapa && fundoCapa.a > 0.5 && lum(fundoCapa) < 0.35) barra.style.background = capa.__bcFundoOriginal;
+      else if (foto) barra.style.background = '#111110';
+      else barra.style.background = 'transparent';
+      capa.insertBefore(barra, capa.firstChild);
+      if (foto) imp(foto, 'margin-top', '0px');
+    }
+    if (capa && capa.querySelector('[data-bc-fundo="capa"], [data-bc-capa-midia]')) capa.setAttribute('data-bc-temcapa', '');
+  }
+
+  // cores: fundo claro e contraste garantido no texto que ficou sobre o papel (roda de novo no acabamento)
+  function cores(telas) {
+    telas.forEach(function (t) {
+      arr(t.querySelectorAll('[data-bc-papel], [data-bc-acao], .bc-fonte')).forEach(function (el) {
+        if (el.getAttribute('data-bc-papel') === 'fonte' || el.classList.contains('bc-fonte')) return;
+        var fundo = corEfetivaDeFundo(el, t); if (!fundo) return;
+        var c = rgb(cs(el).color); if (!c) return;
+        var grande = parseFloat(cs(el).fontSize) >= 24 || (parseFloat(cs(el).fontSize) >= 18.5 && parseInt(cs(el).fontWeight, 10) >= 700);
+        var alvo = grande ? 3.2 : 4.6;
+        if (razao(c, fundo) >= alvo) return;
+        var claroNoClaro = lum(fundo) > 0.5;
+        if (claroNoClaro && lum(c) > 0.55) {
+          // texto claro (era sobre fundo escuro): tinta, ou a cor escurecida quando é cor de destaque
+          var sat = Math.max(c.r, c.g, c.b) - Math.min(c.r, c.g, c.b);
+          imp(el, 'color', sat > 60 ? escurecer(c, fundo, alvo) : '#111110');
+        } else if (claroNoClaro) imp(el, 'color', escurecer(c, fundo, alvo));
+        else if (lum(c) < 0.3) imp(el, 'color', razao({ r: 242, g: 241, b: 233, a: 1 }, fundo) >= alvo ? '#F2F1E9' : '#FFFFFF'); // texto escuro sobre cartão escuro (estado de animação que não rodou)
+        arr(el.querySelectorAll('*')).forEach(function (f) { if (f.hasAttribute('data-bc-papel')) return; var cf = rgb(cs(f).color); if (cf && razao(cf, fundo) < alvo) imp(f, 'color', lum(cf) > 0.55 && Math.max(cf.r, cf.g, cf.b) - Math.min(cf.r, cf.g, cf.b) <= 60 ? '#111110' : escurecer(cf, fundo, alvo)); });
+      });
+      // bordas claras de cartões sobre o papel
+      arr(t.querySelectorAll('[data-bc-acao]')).forEach(function (a) { var s = cs(a); var b = rgb(s.borderTopColor); if (b && parseFloat(s.borderTopWidth) > 0 && lum(b) > 0.6) imp(a, 'border-color', 'rgba(17,17,16,.35)'); });
+      // ícones svg claros
+      arr(t.querySelectorAll('svg[data-bc-svg="icone"]')).forEach(function (v) { var fundo = corEfetivaDeFundo(v, t); var c = rgb(cs(v).color); if (fundo && c && razao(c, fundo) < 2.2) imp(v, 'color', escurecer(c, fundo, 3)); });
+    });
+  }
+
+  // ---------- depois que imagens e fontes chegam ----------
+  function acabamento(telas) {
+    arr(D.querySelectorAll('[data-bc-tela] img[loading="lazy"]')).forEach(function (im) { im.loading = 'eager'; });
+    arr(D.querySelectorAll('[data-bc-tela] img')).forEach(function (im) {
+      if (im.closest('[data-bc-deco]') || im.closest('.bc-marcas')) return;
+      if (im.complete) classificarImagem(im); else im.addEventListener('load', function () { classificarImagem(im); }, { once: true });
+    });
+    // contadores que ficaram no zero (o deck anima ao abrir a tela; no celular a tela não "abre")
+    arr(D.querySelectorAll('[data-bc-tela] [data-to], [data-bc-tela] [data-count], [data-bc-tela] [data-alvo], [data-bc-tela] [data-target]')).forEach(function (el) {
+      var alvo = el.getAttribute('data-to') || el.getAttribute('data-count') || el.getAttribute('data-alvo') || el.getAttribute('data-target');
+      var v = parseFloat(String(alvo).replace(',', '.')); if (!isFinite(v)) return;
+      var atual = (el.textContent || '').match(/[\d.,]+/);
+      var num = atual ? parseFloat(atual[0].replace(/\./g, '').replace(',', '.')) : NaN;
+      if (atual && num !== 0 && Math.abs(num - v) / Math.max(1, Math.abs(v)) < 0.02) return;
+      var dec = (String(alvo).split(/[.,]/)[1] || '').length; if (el.getAttribute('data-dec')) dec = +el.getAttribute('data-dec');
+      var fmt = v.toLocaleString('pt-BR', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+      if (atual) el.textContent = el.textContent.replace(atual[0], fmt); else el.textContent = (el.getAttribute('data-pre') || '') + fmt + (el.getAttribute('data-suf') || el.getAttribute('data-suffix') || '');
+    });
+    // texto que ficou invisível esperando a animação da tela
+    arr(D.querySelectorAll('[data-bc-tela] [data-bc-c], [data-bc-tela] [data-bc-papel], [data-bc-tela] img')).forEach(function (el) {
+      if (el.closest('[data-bc-deco]') || el.closest('[data-bc-oculto]')) return;
+      var s = cs(el);
+      if (parseFloat(s.opacity) < 0.05) imp(el, 'opacity', '1');
+      if (s.visibility === 'hidden') imp(el, 'visibility', 'visible');
+    });
+    // palavras e trechos em linha dentro de um bloco com papel seguem o tamanho do bloco
+    arr(D.querySelectorAll('[data-bc-tela] [data-bc-papel] *')).forEach(function (f) {
+      if (f.closest('svg') || f.hasAttribute('data-bc-papel')) return;
+      var dono = f.parentElement && f.parentElement.closest('[data-bc-papel]');
+      if (cs(f).display.indexOf('inline') !== 0 && !(dono && /^H[1-4]$/.test(dono.tagName))) return;
+      if (f.tagName === 'IMG' || f.tagName === 'svg') return;
+      imp(f, 'font-size', 'inherit'); imp(f, 'line-height', 'inherit');
+    });
+    arr(D.querySelectorAll('[data-bc-tela] [data-bc-papel] *')).forEach(function (f) {
+      if (f.closest('svg') || f.closest('[data-bc-papel="fonte"]') || !direto(f)) return;
+      if (parseFloat(cs(f).fontSize) < 14.5) imp(f, 'font-size', 'max(.5em, 15px)');
+    });
+    telas.forEach(function (t) {
+      var vistas = {};
+      arr(t.querySelectorAll('img')).forEach(function (im) {
+        if (im.closest('[data-bc-oculto],[data-bc-deco],.bc-marcas') || /logo|icone|icon/.test(im.getAttribute('data-bc-img') || '') || cs(im).display === 'none') return;
+        var k = (im.currentSrc || im.src || '').split('?')[0]; if (!k) return;
+        if (vistas[k]) im.setAttribute('data-bc-oculto', ''); else vistas[k] = 1;
+      });
+    });
+    arr(D.querySelectorAll('[data-bc-tela] [data-bc-papel="numero"]')).forEach(ajustarNumero);
+    cores(telas);
+    // título com palavra longa: diminui até caber
+    arr(D.querySelectorAll('[data-bc-tela] [data-bc-papel="capa"], [data-bc-tela] [data-bc-papel="titulo"], [data-bc-tela] [data-bc-papel="titulo3"], [data-bc-tela] [data-bc-papel="subtitulo"]')).forEach(function (el) {
+      var lim = el.clientWidth; var tam = parseFloat(cs(el).fontSize); var n = 0;
+      while (el.scrollWidth > lim + 1 && n < 10) { tam = tam * 0.93; imp(el, 'font-size', tam.toFixed(1) + 'px'); n++; }
+      if (el.scrollWidth > lim + 1) imp(el, 'overflow-wrap', 'anywhere');
+    });
+    // o que ainda vaza para o lado: quebra, vira coluna ou encolhe
+    arr(D.querySelectorAll('[data-bc-tela] *')).forEach(function (el) {
+      if (el.closest('svg') || el.closest('[data-bc-deco]') || el.closest('[data-bc-oculto]')) return;
+      var r = el.getBoundingClientRect(); if (!r.width) return;
+      if (r.right > W.innerWidth + 1 || r.left < -1) {
+        var s = cs(el);
+        if (/flex/.test(s.display)) { el.setAttribute('data-bc-linha', 'coluna'); }
+        else if (/grid/.test(s.display)) { el.setAttribute('data-bc-grade', ''); }
+        else if (el.tagName === 'IMG' || el.tagName === 'VIDEO') { imp(el, 'width', '100%'); imp(el, 'height', 'auto'); }
+        else if (direto(el)) { imp(el, 'overflow-wrap', 'anywhere'); imp(el, 'white-space', 'normal'); }
+        else imp(el, 'width', 'auto');
+      }
+    });
+  }
+
+  // ---------- navegação ----------
+  function navegacao(telas) {
+    if (telas.length < 2 || D.getElementById('bc-nav')) return;
+    var nav = D.createElement('div'); nav.id = 'bc-nav'; nav.setAttribute('aria-hidden', 'true'); nav.setAttribute('data-bc-proprio', '');
+    var trilho = telas.length > 18;
+    if (trilho) { nav.className = 'bc-trilho'; nav.appendChild(D.createElement('b')); }
+    else telas.forEach(function () { nav.appendChild(D.createElement('i')); });
+    D.body.appendChild(nav);
+    var atual = -1;
+    function marcar() {
+      var meio = W.innerHeight * 0.42, idx = 0;
+      for (var i = 0; i < telas.length; i++) { if (telas[i].getBoundingClientRect().top <= meio) idx = i; }
+      if (idx === atual) return; atual = idx;
+      if (trilho) nav.firstChild.style.height = Math.round(((idx + 1) / telas.length) * 100) + '%';
+      else arr(nav.children).forEach(function (d, i) { d.className = i === idx ? 'bc-agora' : ''; });
+    }
+    var parado = null;
+    W.addEventListener('scroll', function () { marcar(); nav.classList.add('bc-rolando'); clearTimeout(parado); parado = setTimeout(function () { nav.classList.remove('bc-rolando'); }, 1400); }, { passive: true });
+    marcar();
+  }
+
+  // botão "Roteiro" do modo apresentador: no celular sai do canto fixo (cobriria o texto) e vai para o fim da página
+  function roteiroNoFim(telas) {
+    var b = D.getElementById('botao-roteiro'); if (!b || !telas.length) return;
+    var ult = telas[telas.length - 1];
+    var box = D.createElement('div'); box.className = 'bc-rodape'; box.setAttribute('data-bc-proprio', '');
+    ult.parentElement.insertBefore(box, ult.nextSibling);
+    box.appendChild(b);
+    b.removeAttribute('data-bc-cromo');
+    ['position', 'top', 'right', 'left', 'bottom', 'opacity', 'z-index'].forEach(function (k) { b.style.removeProperty(k); });
+  }
+
+  // o deck não pode mais passar tela por gesto, roda ou tecla no celular: a página rola
+  function travarGestosDoDeck() {
+    ['touchstart', 'touchmove', 'touchend', 'wheel', 'keydown', 'pointerdown', 'pointermove', 'pointerup', 'mousemove'].forEach(function (ev) {
+      W.addEventListener(ev, function (e) {
+        if (!H.classList.contains('bc-cel')) return;
+        if (ev === 'keydown' && !/^(Arrow|Page|Home|End| |Spacebar)/.test(e.key || '')) return;
+        if (/^pointer/.test(ev) && e.target && e.target.closest && e.target.closest('a,button,input,select,textarea,[role=button],[onclick]')) return;
+        e.stopImmediatePropagation();
+      }, { capture: true, passive: true });
+    });
+  }
+
+  function manterTelasAtivas(telas, ativa) {
+    if (!ativa || !W.MutationObserver) return;
+    var mo = new MutationObserver(function () { telas.forEach(function (t) { if (!t.classList.contains(ativa)) t.classList.add(ativa); }); });
+    telas.forEach(function (t) { mo.observe(t, { attributes: true, attributeFilter: ['class'] }); });
+  }
+
+  // página responsiva (one-pager sem telas): não redesenha, só tira o que vaza para o lado
+  function consertarPagina() {
+    var largo = function () { return Math.max(H.scrollWidth, D.body.scrollWidth) > largura() + 1; };
+    if (!largo()) return;
+    // 1) mídia nunca mais larga que a tela
+    arr(D.body.querySelectorAll('img, video, iframe, canvas, svg, table, pre')).forEach(function (el) { var r = el.getBoundingClientRect(); if (r.right > largura() + 1 && !/fixed/.test(cs(el).position)) { imp(el, 'max-width', '100%'); if (el.tagName !== 'TABLE' && el.tagName !== 'PRE') imp(el, 'height', 'auto'); } });
+    // 2) sobra pequena (até 24 px, sombra ou borda): corta na página; maior que isso fica para a conferência apontar
+    if (largo() && Math.max(H.scrollWidth, D.body.scrollWidth) - largura() <= 24) { imp(H, 'overflow-x', 'hidden'); imp(D.body, 'overflow-x', 'hidden'); }
+  }
+
+  var feito = false;
+  function iniciar() {
+    if (feito || !D.body) return;
+    if (!querCelular()) return;
+    var telas = acharTelas();
+    if (!telas.length) { if (!H.hasAttribute('data-bc-pronto')) H.setAttribute('data-bc-pronto', '0'); consertarPagina(); return; }
+    feito = true;
+    try {
+      telas.forEach(function (t, i) {
+        t.setAttribute('data-bc-tela', String(i + 1));
+        for (var p = t.parentElement; p && p !== D.body && p !== H; p = p.parentElement) p.setAttribute('data-bc-palco', '');
+      });
+      var ativa = classeAtiva(telas);
+      // lê o desenho com todas as telas abertas e sem animação
+      var trava = D.createElement('style'); trava.textContent = '*,*::before,*::after{transition:none!important;animation-play-state:paused!important}';
+      D.head.appendChild(trava);
+      telas.forEach(function (t) { if (ativa) t.classList.add(ativa); });
+      void D.body.offsetHeight;
+      var fundos = analisar(telas, ativa);
+      var logos = logosDaCapa(cabecalhosDasTelas(telas).concat(cromo(telas)));
+      aplicar(telas, ativa, fundos, logos);
+      trava.remove();
+      travarGestosDoDeck();
+      manterTelasAtivas(telas, ativa);
+      navegacao(telas);
+      roteiroNoFim(telas);
+      acabamento(telas);
+      W.addEventListener('load', function () { acabamento(telas); });
+      if (D.fonts && D.fonts.ready) D.fonts.ready.then(function () { acabamento(telas); });
+      setTimeout(function () { acabamento(telas); }, 1600);
+      setTimeout(function () { acabamento(telas); W.scrollTo(0, 0); }, 3200);
+      H.setAttribute('data-bc-pronto', String(telas.length));
+    } catch (e) {
+      // qualquer falha: volta ao deck original, sem a base
+      H.classList.remove('bc-cel');
+      H.setAttribute('data-bc-erro', String(e && e.message || e).slice(0, 160));
+    }
+  }
+
+  // troca de tamanho que cruza o limite: recarrega (desfazer o desenho do celular não vale o risco)
+  var larguraInicial = largura(), estadoInicial = null;
+  W.addEventListener('resize', function () {
+    if (Math.abs(largura() - larguraInicial) < 40) return;
+    clearTimeout(W.__bcRz);
+    W.__bcRz = setTimeout(function () { var agora = largura() < 900; if (estadoInicial !== null && agora !== estadoInicial && !FORCAR) location.reload(); }, 350);
+  });
+  function comecar() { estadoInicial = largura() < 900; iniciar(); }
+  if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', comecar); else comecar();
+  W.addEventListener('load', function () { setTimeout(iniciar, 60); });
+  setTimeout(iniciar, 900);
+})();
+</script>
+</body></html>
